@@ -1,0 +1,1619 @@
+27
+items = [79, 98] operation = 'old * 19' test = 23  true_case = 2  false_case = 3
+items = [54, 65, 75, 74] operation = 'old + 6' test = 19  true_case = 2  false_case = 0
+items = [79, 60, 97] operation = 'old * old' test = 13  true_case = 1  false_case = 3
+items = [74] operation = 'old + 3' test = 17  true_case = 0  false_case = 1
+Monkey 0:
+  Monkey inspects an item with a worry level of 79.
+  Worry level operation is old * 19 with old = 79 and new = 1501
+  Monkey gets bored with item. Worry level is divided by 3 to 500.
+    Current worry level is not divisible by 23.
+    Item with worry level 500 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 98.
+  Worry level operation is old * 19 with old = 98 and new = 1862
+  Monkey gets bored with item. Worry level is divided by 3 to 620.
+    Current worry level is not divisible by 23.
+    Item with worry level 620 is thrown to monkey 3
+[[], [54, 65, 75, 74], [79, 60, 97], [74, 500, 620]]
+Monkey 1:
+  Monkey inspects an item with a worry level of 54.
+  Worry level operation is old + 6 with old = 54 and new = 60
+  Monkey gets bored with item. Worry level is divided by 3 to 20.
+    Current worry level is not divisible by 19.
+    Item with worry level 20 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 65.
+  Worry level operation is old + 6 with old = 65 and new = 71
+  Monkey gets bored with item. Worry level is divided by 3 to 23.
+    Current worry level is not divisible by 19.
+    Item with worry level 23 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 75.
+  Worry level operation is old + 6 with old = 75 and new = 81
+  Monkey gets bored with item. Worry level is divided by 3 to 27.
+    Current worry level is not divisible by 19.
+    Item with worry level 27 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 74.
+  Worry level operation is old + 6 with old = 74 and new = 80
+  Monkey gets bored with item. Worry level is divided by 3 to 26.
+    Current worry level is not divisible by 19.
+    Item with worry level 26 is thrown to monkey 0
+[[20, 23, 27, 26], [], [79, 60, 97], [74, 500, 620]]
+Monkey 2:
+  Monkey inspects an item with a worry level of 79.
+  Worry level operation is old * old with old = 79 and new = 6241
+  Monkey gets bored with item. Worry level is divided by 3 to 2080.
+    Current worry level is divisible by 13.
+    Item with worry level 2080 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 60.
+  Worry level operation is old * old with old = 60 and new = 3600
+  Monkey gets bored with item. Worry level is divided by 3 to 1200.
+    Current worry level is not divisible by 13.
+    Item with worry level 1200 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 97.
+  Worry level operation is old * old with old = 97 and new = 9409
+  Monkey gets bored with item. Worry level is divided by 3 to 3136.
+    Current worry level is not divisible by 13.
+    Item with worry level 3136 is thrown to monkey 3
+[[20, 23, 27, 26], [2080], [], [74, 500, 620, 1200, 3136]]
+Monkey 3:
+  Monkey inspects an item with a worry level of 74.
+  Worry level operation is old + 3 with old = 74 and new = 77
+  Monkey gets bored with item. Worry level is divided by 3 to 25.
+    Current worry level is not divisible by 17.
+    Item with worry level 25 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 500.
+  Worry level operation is old + 3 with old = 500 and new = 503
+  Monkey gets bored with item. Worry level is divided by 3 to 167.
+    Current worry level is not divisible by 17.
+    Item with worry level 167 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 620.
+  Worry level operation is old + 3 with old = 620 and new = 623
+  Monkey gets bored with item. Worry level is divided by 3 to 207.
+    Current worry level is not divisible by 17.
+    Item with worry level 207 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 1200.
+  Worry level operation is old + 3 with old = 1200 and new = 1203
+  Monkey gets bored with item. Worry level is divided by 3 to 401.
+    Current worry level is not divisible by 17.
+    Item with worry level 401 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 3136.
+  Worry level operation is old + 3 with old = 3136 and new = 3139
+  Monkey gets bored with item. Worry level is divided by 3 to 1046.
+    Current worry level is not divisible by 17.
+    Item with worry level 1046 is thrown to monkey 1
+[[20, 23, 27, 26], [2080, 25, 167, 207, 401, 1046], [], []]
+Monkey 0:
+  Monkey inspects an item with a worry level of 20.
+  Worry level operation is old * 19 with old = 20 and new = 380
+  Monkey gets bored with item. Worry level is divided by 3 to 126.
+    Current worry level is not divisible by 23.
+    Item with worry level 126 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 23.
+  Worry level operation is old * 19 with old = 23 and new = 437
+  Monkey gets bored with item. Worry level is divided by 3 to 145.
+    Current worry level is not divisible by 23.
+    Item with worry level 145 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 27.
+  Worry level operation is old * 19 with old = 27 and new = 513
+  Monkey gets bored with item. Worry level is divided by 3 to 171.
+    Current worry level is not divisible by 23.
+    Item with worry level 171 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 26.
+  Worry level operation is old * 19 with old = 26 and new = 494
+  Monkey gets bored with item. Worry level is divided by 3 to 164.
+    Current worry level is not divisible by 23.
+    Item with worry level 164 is thrown to monkey 3
+[[], [2080, 25, 167, 207, 401, 1046], [], [126, 145, 171, 164]]
+Monkey 1:
+  Monkey inspects an item with a worry level of 2080.
+  Worry level operation is old + 6 with old = 2080 and new = 2086
+  Monkey gets bored with item. Worry level is divided by 3 to 695.
+    Current worry level is not divisible by 19.
+    Item with worry level 695 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 25.
+  Worry level operation is old + 6 with old = 25 and new = 31
+  Monkey gets bored with item. Worry level is divided by 3 to 10.
+    Current worry level is not divisible by 19.
+    Item with worry level 10 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 167.
+  Worry level operation is old + 6 with old = 167 and new = 173
+  Monkey gets bored with item. Worry level is divided by 3 to 57.
+    Current worry level is divisible by 19.
+    Item with worry level 57 is thrown to monkey 2
+  Monkey inspects an item with a worry level of 207.
+  Worry level operation is old + 6 with old = 207 and new = 213
+  Monkey gets bored with item. Worry level is divided by 3 to 71.
+    Current worry level is not divisible by 19.
+    Item with worry level 71 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 401.
+  Worry level operation is old + 6 with old = 401 and new = 407
+  Monkey gets bored with item. Worry level is divided by 3 to 135.
+    Current worry level is not divisible by 19.
+    Item with worry level 135 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 1046.
+  Worry level operation is old + 6 with old = 1046 and new = 1052
+  Monkey gets bored with item. Worry level is divided by 3 to 350.
+    Current worry level is not divisible by 19.
+    Item with worry level 350 is thrown to monkey 0
+[[695, 10, 71, 135, 350], [], [57], [126, 145, 171, 164]]
+Monkey 2:
+  Monkey inspects an item with a worry level of 57.
+  Worry level operation is old * old with old = 57 and new = 3249
+  Monkey gets bored with item. Worry level is divided by 3 to 1083.
+    Current worry level is not divisible by 13.
+    Item with worry level 1083 is thrown to monkey 3
+[[695, 10, 71, 135, 350], [], [], [126, 145, 171, 164, 1083]]
+Monkey 3:
+  Monkey inspects an item with a worry level of 126.
+  Worry level operation is old + 3 with old = 126 and new = 129
+  Monkey gets bored with item. Worry level is divided by 3 to 43.
+    Current worry level is not divisible by 17.
+    Item with worry level 43 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 145.
+  Worry level operation is old + 3 with old = 145 and new = 148
+  Monkey gets bored with item. Worry level is divided by 3 to 49.
+    Current worry level is not divisible by 17.
+    Item with worry level 49 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 171.
+  Worry level operation is old + 3 with old = 171 and new = 174
+  Monkey gets bored with item. Worry level is divided by 3 to 58.
+    Current worry level is not divisible by 17.
+    Item with worry level 58 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 164.
+  Worry level operation is old + 3 with old = 164 and new = 167
+  Monkey gets bored with item. Worry level is divided by 3 to 55.
+    Current worry level is not divisible by 17.
+    Item with worry level 55 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 1083.
+  Worry level operation is old + 3 with old = 1083 and new = 1086
+  Monkey gets bored with item. Worry level is divided by 3 to 362.
+    Current worry level is not divisible by 17.
+    Item with worry level 362 is thrown to monkey 1
+[[695, 10, 71, 135, 350], [43, 49, 58, 55, 362], [], []]
+Monkey 0:
+  Monkey inspects an item with a worry level of 695.
+  Worry level operation is old * 19 with old = 695 and new = 13205
+  Monkey gets bored with item. Worry level is divided by 3 to 4401.
+    Current worry level is not divisible by 23.
+    Item with worry level 4401 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 10.
+  Worry level operation is old * 19 with old = 10 and new = 190
+  Monkey gets bored with item. Worry level is divided by 3 to 63.
+    Current worry level is not divisible by 23.
+    Item with worry level 63 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 71.
+  Worry level operation is old * 19 with old = 71 and new = 1349
+  Monkey gets bored with item. Worry level is divided by 3 to 449.
+    Current worry level is not divisible by 23.
+    Item with worry level 449 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 135.
+  Worry level operation is old * 19 with old = 135 and new = 2565
+  Monkey gets bored with item. Worry level is divided by 3 to 855.
+    Current worry level is not divisible by 23.
+    Item with worry level 855 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 350.
+  Worry level operation is old * 19 with old = 350 and new = 6650
+  Monkey gets bored with item. Worry level is divided by 3 to 2216.
+    Current worry level is not divisible by 23.
+    Item with worry level 2216 is thrown to monkey 3
+[[], [43, 49, 58, 55, 362], [], [4401, 63, 449, 855, 2216]]
+Monkey 1:
+  Monkey inspects an item with a worry level of 43.
+  Worry level operation is old + 6 with old = 43 and new = 49
+  Monkey gets bored with item. Worry level is divided by 3 to 16.
+    Current worry level is not divisible by 19.
+    Item with worry level 16 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 49.
+  Worry level operation is old + 6 with old = 49 and new = 55
+  Monkey gets bored with item. Worry level is divided by 3 to 18.
+    Current worry level is not divisible by 19.
+    Item with worry level 18 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 58.
+  Worry level operation is old + 6 with old = 58 and new = 64
+  Monkey gets bored with item. Worry level is divided by 3 to 21.
+    Current worry level is not divisible by 19.
+    Item with worry level 21 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 55.
+  Worry level operation is old + 6 with old = 55 and new = 61
+  Monkey gets bored with item. Worry level is divided by 3 to 20.
+    Current worry level is not divisible by 19.
+    Item with worry level 20 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 362.
+  Worry level operation is old + 6 with old = 362 and new = 368
+  Monkey gets bored with item. Worry level is divided by 3 to 122.
+    Current worry level is not divisible by 19.
+    Item with worry level 122 is thrown to monkey 0
+[[16, 18, 21, 20, 122], [], [], [4401, 63, 449, 855, 2216]]
+Monkey 2:
+[[16, 18, 21, 20, 122], [], [], [4401, 63, 449, 855, 2216]]
+Monkey 3:
+  Monkey inspects an item with a worry level of 4401.
+  Worry level operation is old + 3 with old = 4401 and new = 4404
+  Monkey gets bored with item. Worry level is divided by 3 to 1468.
+    Current worry level is not divisible by 17.
+    Item with worry level 1468 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 63.
+  Worry level operation is old + 3 with old = 63 and new = 66
+  Monkey gets bored with item. Worry level is divided by 3 to 22.
+    Current worry level is not divisible by 17.
+    Item with worry level 22 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 449.
+  Worry level operation is old + 3 with old = 449 and new = 452
+  Monkey gets bored with item. Worry level is divided by 3 to 150.
+    Current worry level is not divisible by 17.
+    Item with worry level 150 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 855.
+  Worry level operation is old + 3 with old = 855 and new = 858
+  Monkey gets bored with item. Worry level is divided by 3 to 286.
+    Current worry level is not divisible by 17.
+    Item with worry level 286 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 2216.
+  Worry level operation is old + 3 with old = 2216 and new = 2219
+  Monkey gets bored with item. Worry level is divided by 3 to 739.
+    Current worry level is not divisible by 17.
+    Item with worry level 739 is thrown to monkey 1
+[[16, 18, 21, 20, 122], [1468, 22, 150, 286, 739], [], []]
+Monkey 0:
+  Monkey inspects an item with a worry level of 16.
+  Worry level operation is old * 19 with old = 16 and new = 304
+  Monkey gets bored with item. Worry level is divided by 3 to 101.
+    Current worry level is not divisible by 23.
+    Item with worry level 101 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 18.
+  Worry level operation is old * 19 with old = 18 and new = 342
+  Monkey gets bored with item. Worry level is divided by 3 to 114.
+    Current worry level is not divisible by 23.
+    Item with worry level 114 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 21.
+  Worry level operation is old * 19 with old = 21 and new = 399
+  Monkey gets bored with item. Worry level is divided by 3 to 133.
+    Current worry level is not divisible by 23.
+    Item with worry level 133 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 20.
+  Worry level operation is old * 19 with old = 20 and new = 380
+  Monkey gets bored with item. Worry level is divided by 3 to 126.
+    Current worry level is not divisible by 23.
+    Item with worry level 126 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 122.
+  Worry level operation is old * 19 with old = 122 and new = 2318
+  Monkey gets bored with item. Worry level is divided by 3 to 772.
+    Current worry level is not divisible by 23.
+    Item with worry level 772 is thrown to monkey 3
+[[], [1468, 22, 150, 286, 739], [], [101, 114, 133, 126, 772]]
+Monkey 1:
+  Monkey inspects an item with a worry level of 1468.
+  Worry level operation is old + 6 with old = 1468 and new = 1474
+  Monkey gets bored with item. Worry level is divided by 3 to 491.
+    Current worry level is not divisible by 19.
+    Item with worry level 491 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 22.
+  Worry level operation is old + 6 with old = 22 and new = 28
+  Monkey gets bored with item. Worry level is divided by 3 to 9.
+    Current worry level is not divisible by 19.
+    Item with worry level 9 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 150.
+  Worry level operation is old + 6 with old = 150 and new = 156
+  Monkey gets bored with item. Worry level is divided by 3 to 52.
+    Current worry level is not divisible by 19.
+    Item with worry level 52 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 286.
+  Worry level operation is old + 6 with old = 286 and new = 292
+  Monkey gets bored with item. Worry level is divided by 3 to 97.
+    Current worry level is not divisible by 19.
+    Item with worry level 97 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 739.
+  Worry level operation is old + 6 with old = 739 and new = 745
+  Monkey gets bored with item. Worry level is divided by 3 to 248.
+    Current worry level is not divisible by 19.
+    Item with worry level 248 is thrown to monkey 0
+[[491, 9, 52, 97, 248], [], [], [101, 114, 133, 126, 772]]
+Monkey 2:
+[[491, 9, 52, 97, 248], [], [], [101, 114, 133, 126, 772]]
+Monkey 3:
+  Monkey inspects an item with a worry level of 101.
+  Worry level operation is old + 3 with old = 101 and new = 104
+  Monkey gets bored with item. Worry level is divided by 3 to 34.
+    Current worry level is divisible by 17.
+    Item with worry level 34 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 114.
+  Worry level operation is old + 3 with old = 114 and new = 117
+  Monkey gets bored with item. Worry level is divided by 3 to 39.
+    Current worry level is not divisible by 17.
+    Item with worry level 39 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 133.
+  Worry level operation is old + 3 with old = 133 and new = 136
+  Monkey gets bored with item. Worry level is divided by 3 to 45.
+    Current worry level is not divisible by 17.
+    Item with worry level 45 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 126.
+  Worry level operation is old + 3 with old = 126 and new = 129
+  Monkey gets bored with item. Worry level is divided by 3 to 43.
+    Current worry level is not divisible by 17.
+    Item with worry level 43 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 772.
+  Worry level operation is old + 3 with old = 772 and new = 775
+  Monkey gets bored with item. Worry level is divided by 3 to 258.
+    Current worry level is not divisible by 17.
+    Item with worry level 258 is thrown to monkey 1
+[[491, 9, 52, 97, 248, 34], [39, 45, 43, 258], [], []]
+Monkey 0:
+  Monkey inspects an item with a worry level of 491.
+  Worry level operation is old * 19 with old = 491 and new = 9329
+  Monkey gets bored with item. Worry level is divided by 3 to 3109.
+    Current worry level is not divisible by 23.
+    Item with worry level 3109 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 9.
+  Worry level operation is old * 19 with old = 9 and new = 171
+  Monkey gets bored with item. Worry level is divided by 3 to 57.
+    Current worry level is not divisible by 23.
+    Item with worry level 57 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 52.
+  Worry level operation is old * 19 with old = 52 and new = 988
+  Monkey gets bored with item. Worry level is divided by 3 to 329.
+    Current worry level is not divisible by 23.
+    Item with worry level 329 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 97.
+  Worry level operation is old * 19 with old = 97 and new = 1843
+  Monkey gets bored with item. Worry level is divided by 3 to 614.
+    Current worry level is not divisible by 23.
+    Item with worry level 614 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 248.
+  Worry level operation is old * 19 with old = 248 and new = 4712
+  Monkey gets bored with item. Worry level is divided by 3 to 1570.
+    Current worry level is not divisible by 23.
+    Item with worry level 1570 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 34.
+  Worry level operation is old * 19 with old = 34 and new = 646
+  Monkey gets bored with item. Worry level is divided by 3 to 215.
+    Current worry level is not divisible by 23.
+    Item with worry level 215 is thrown to monkey 3
+[[], [39, 45, 43, 258], [], [3109, 57, 329, 614, 1570, 215]]
+Monkey 1:
+  Monkey inspects an item with a worry level of 39.
+  Worry level operation is old + 6 with old = 39 and new = 45
+  Monkey gets bored with item. Worry level is divided by 3 to 15.
+    Current worry level is not divisible by 19.
+    Item with worry level 15 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 45.
+  Worry level operation is old + 6 with old = 45 and new = 51
+  Monkey gets bored with item. Worry level is divided by 3 to 17.
+    Current worry level is not divisible by 19.
+    Item with worry level 17 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 43.
+  Worry level operation is old + 6 with old = 43 and new = 49
+  Monkey gets bored with item. Worry level is divided by 3 to 16.
+    Current worry level is not divisible by 19.
+    Item with worry level 16 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 258.
+  Worry level operation is old + 6 with old = 258 and new = 264
+  Monkey gets bored with item. Worry level is divided by 3 to 88.
+    Current worry level is not divisible by 19.
+    Item with worry level 88 is thrown to monkey 0
+[[15, 17, 16, 88], [], [], [3109, 57, 329, 614, 1570, 215]]
+Monkey 2:
+[[15, 17, 16, 88], [], [], [3109, 57, 329, 614, 1570, 215]]
+Monkey 3:
+  Monkey inspects an item with a worry level of 3109.
+  Worry level operation is old + 3 with old = 3109 and new = 3112
+  Monkey gets bored with item. Worry level is divided by 3 to 1037.
+    Current worry level is divisible by 17.
+    Item with worry level 1037 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 57.
+  Worry level operation is old + 3 with old = 57 and new = 60
+  Monkey gets bored with item. Worry level is divided by 3 to 20.
+    Current worry level is not divisible by 17.
+    Item with worry level 20 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 329.
+  Worry level operation is old + 3 with old = 329 and new = 332
+  Monkey gets bored with item. Worry level is divided by 3 to 110.
+    Current worry level is not divisible by 17.
+    Item with worry level 110 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 614.
+  Worry level operation is old + 3 with old = 614 and new = 617
+  Monkey gets bored with item. Worry level is divided by 3 to 205.
+    Current worry level is not divisible by 17.
+    Item with worry level 205 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 1570.
+  Worry level operation is old + 3 with old = 1570 and new = 1573
+  Monkey gets bored with item. Worry level is divided by 3 to 524.
+    Current worry level is not divisible by 17.
+    Item with worry level 524 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 215.
+  Worry level operation is old + 3 with old = 215 and new = 218
+  Monkey gets bored with item. Worry level is divided by 3 to 72.
+    Current worry level is not divisible by 17.
+    Item with worry level 72 is thrown to monkey 1
+[[15, 17, 16, 88, 1037], [20, 110, 205, 524, 72], [], []]
+Monkey 0:
+  Monkey inspects an item with a worry level of 15.
+  Worry level operation is old * 19 with old = 15 and new = 285
+  Monkey gets bored with item. Worry level is divided by 3 to 95.
+    Current worry level is not divisible by 23.
+    Item with worry level 95 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 17.
+  Worry level operation is old * 19 with old = 17 and new = 323
+  Monkey gets bored with item. Worry level is divided by 3 to 107.
+    Current worry level is not divisible by 23.
+    Item with worry level 107 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 16.
+  Worry level operation is old * 19 with old = 16 and new = 304
+  Monkey gets bored with item. Worry level is divided by 3 to 101.
+    Current worry level is not divisible by 23.
+    Item with worry level 101 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 88.
+  Worry level operation is old * 19 with old = 88 and new = 1672
+  Monkey gets bored with item. Worry level is divided by 3 to 557.
+    Current worry level is not divisible by 23.
+    Item with worry level 557 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 1037.
+  Worry level operation is old * 19 with old = 1037 and new = 19703
+  Monkey gets bored with item. Worry level is divided by 3 to 6567.
+    Current worry level is not divisible by 23.
+    Item with worry level 6567 is thrown to monkey 3
+[[], [20, 110, 205, 524, 72], [], [95, 107, 101, 557, 6567]]
+Monkey 1:
+  Monkey inspects an item with a worry level of 20.
+  Worry level operation is old + 6 with old = 20 and new = 26
+  Monkey gets bored with item. Worry level is divided by 3 to 8.
+    Current worry level is not divisible by 19.
+    Item with worry level 8 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 110.
+  Worry level operation is old + 6 with old = 110 and new = 116
+  Monkey gets bored with item. Worry level is divided by 3 to 38.
+    Current worry level is divisible by 19.
+    Item with worry level 38 is thrown to monkey 2
+  Monkey inspects an item with a worry level of 205.
+  Worry level operation is old + 6 with old = 205 and new = 211
+  Monkey gets bored with item. Worry level is divided by 3 to 70.
+    Current worry level is not divisible by 19.
+    Item with worry level 70 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 524.
+  Worry level operation is old + 6 with old = 524 and new = 530
+  Monkey gets bored with item. Worry level is divided by 3 to 176.
+    Current worry level is not divisible by 19.
+    Item with worry level 176 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 72.
+  Worry level operation is old + 6 with old = 72 and new = 78
+  Monkey gets bored with item. Worry level is divided by 3 to 26.
+    Current worry level is not divisible by 19.
+    Item with worry level 26 is thrown to monkey 0
+[[8, 70, 176, 26], [], [38], [95, 107, 101, 557, 6567]]
+Monkey 2:
+  Monkey inspects an item with a worry level of 38.
+  Worry level operation is old * old with old = 38 and new = 1444
+  Monkey gets bored with item. Worry level is divided by 3 to 481.
+    Current worry level is divisible by 13.
+    Item with worry level 481 is thrown to monkey 1
+[[8, 70, 176, 26], [481], [], [95, 107, 101, 557, 6567]]
+Monkey 3:
+  Monkey inspects an item with a worry level of 95.
+  Worry level operation is old + 3 with old = 95 and new = 98
+  Monkey gets bored with item. Worry level is divided by 3 to 32.
+    Current worry level is not divisible by 17.
+    Item with worry level 32 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 107.
+  Worry level operation is old + 3 with old = 107 and new = 110
+  Monkey gets bored with item. Worry level is divided by 3 to 36.
+    Current worry level is not divisible by 17.
+    Item with worry level 36 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 101.
+  Worry level operation is old + 3 with old = 101 and new = 104
+  Monkey gets bored with item. Worry level is divided by 3 to 34.
+    Current worry level is divisible by 17.
+    Item with worry level 34 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 557.
+  Worry level operation is old + 3 with old = 557 and new = 560
+  Monkey gets bored with item. Worry level is divided by 3 to 186.
+    Current worry level is not divisible by 17.
+    Item with worry level 186 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 6567.
+  Worry level operation is old + 3 with old = 6567 and new = 6570
+  Monkey gets bored with item. Worry level is divided by 3 to 2190.
+    Current worry level is not divisible by 17.
+    Item with worry level 2190 is thrown to monkey 1
+[[8, 70, 176, 26, 34], [481, 32, 36, 186, 2190], [], []]
+Monkey 0:
+  Monkey inspects an item with a worry level of 8.
+  Worry level operation is old * 19 with old = 8 and new = 152
+  Monkey gets bored with item. Worry level is divided by 3 to 50.
+    Current worry level is not divisible by 23.
+    Item with worry level 50 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 70.
+  Worry level operation is old * 19 with old = 70 and new = 1330
+  Monkey gets bored with item. Worry level is divided by 3 to 443.
+    Current worry level is not divisible by 23.
+    Item with worry level 443 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 176.
+  Worry level operation is old * 19 with old = 176 and new = 3344
+  Monkey gets bored with item. Worry level is divided by 3 to 1114.
+    Current worry level is not divisible by 23.
+    Item with worry level 1114 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 26.
+  Worry level operation is old * 19 with old = 26 and new = 494
+  Monkey gets bored with item. Worry level is divided by 3 to 164.
+    Current worry level is not divisible by 23.
+    Item with worry level 164 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 34.
+  Worry level operation is old * 19 with old = 34 and new = 646
+  Monkey gets bored with item. Worry level is divided by 3 to 215.
+    Current worry level is not divisible by 23.
+    Item with worry level 215 is thrown to monkey 3
+[[], [481, 32, 36, 186, 2190], [], [50, 443, 1114, 164, 215]]
+Monkey 1:
+  Monkey inspects an item with a worry level of 481.
+  Worry level operation is old + 6 with old = 481 and new = 487
+  Monkey gets bored with item. Worry level is divided by 3 to 162.
+    Current worry level is not divisible by 19.
+    Item with worry level 162 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 32.
+  Worry level operation is old + 6 with old = 32 and new = 38
+  Monkey gets bored with item. Worry level is divided by 3 to 12.
+    Current worry level is not divisible by 19.
+    Item with worry level 12 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 36.
+  Worry level operation is old + 6 with old = 36 and new = 42
+  Monkey gets bored with item. Worry level is divided by 3 to 14.
+    Current worry level is not divisible by 19.
+    Item with worry level 14 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 186.
+  Worry level operation is old + 6 with old = 186 and new = 192
+  Monkey gets bored with item. Worry level is divided by 3 to 64.
+    Current worry level is not divisible by 19.
+    Item with worry level 64 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 2190.
+  Worry level operation is old + 6 with old = 2190 and new = 2196
+  Monkey gets bored with item. Worry level is divided by 3 to 732.
+    Current worry level is not divisible by 19.
+    Item with worry level 732 is thrown to monkey 0
+[[162, 12, 14, 64, 732], [], [], [50, 443, 1114, 164, 215]]
+Monkey 2:
+[[162, 12, 14, 64, 732], [], [], [50, 443, 1114, 164, 215]]
+Monkey 3:
+  Monkey inspects an item with a worry level of 50.
+  Worry level operation is old + 3 with old = 50 and new = 53
+  Monkey gets bored with item. Worry level is divided by 3 to 17.
+    Current worry level is divisible by 17.
+    Item with worry level 17 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 443.
+  Worry level operation is old + 3 with old = 443 and new = 446
+  Monkey gets bored with item. Worry level is divided by 3 to 148.
+    Current worry level is not divisible by 17.
+    Item with worry level 148 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 1114.
+  Worry level operation is old + 3 with old = 1114 and new = 1117
+  Monkey gets bored with item. Worry level is divided by 3 to 372.
+    Current worry level is not divisible by 17.
+    Item with worry level 372 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 164.
+  Worry level operation is old + 3 with old = 164 and new = 167
+  Monkey gets bored with item. Worry level is divided by 3 to 55.
+    Current worry level is not divisible by 17.
+    Item with worry level 55 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 215.
+  Worry level operation is old + 3 with old = 215 and new = 218
+  Monkey gets bored with item. Worry level is divided by 3 to 72.
+    Current worry level is not divisible by 17.
+    Item with worry level 72 is thrown to monkey 1
+[[162, 12, 14, 64, 732, 17], [148, 372, 55, 72], [], []]
+Monkey 0:
+  Monkey inspects an item with a worry level of 162.
+  Worry level operation is old * 19 with old = 162 and new = 3078
+  Monkey gets bored with item. Worry level is divided by 3 to 1026.
+    Current worry level is not divisible by 23.
+    Item with worry level 1026 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 12.
+  Worry level operation is old * 19 with old = 12 and new = 228
+  Monkey gets bored with item. Worry level is divided by 3 to 76.
+    Current worry level is not divisible by 23.
+    Item with worry level 76 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 14.
+  Worry level operation is old * 19 with old = 14 and new = 266
+  Monkey gets bored with item. Worry level is divided by 3 to 88.
+    Current worry level is not divisible by 23.
+    Item with worry level 88 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 64.
+  Worry level operation is old * 19 with old = 64 and new = 1216
+  Monkey gets bored with item. Worry level is divided by 3 to 405.
+    Current worry level is not divisible by 23.
+    Item with worry level 405 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 732.
+  Worry level operation is old * 19 with old = 732 and new = 13908
+  Monkey gets bored with item. Worry level is divided by 3 to 4636.
+    Current worry level is not divisible by 23.
+    Item with worry level 4636 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 17.
+  Worry level operation is old * 19 with old = 17 and new = 323
+  Monkey gets bored with item. Worry level is divided by 3 to 107.
+    Current worry level is not divisible by 23.
+    Item with worry level 107 is thrown to monkey 3
+[[], [148, 372, 55, 72], [], [1026, 76, 88, 405, 4636, 107]]
+Monkey 1:
+  Monkey inspects an item with a worry level of 148.
+  Worry level operation is old + 6 with old = 148 and new = 154
+  Monkey gets bored with item. Worry level is divided by 3 to 51.
+    Current worry level is not divisible by 19.
+    Item with worry level 51 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 372.
+  Worry level operation is old + 6 with old = 372 and new = 378
+  Monkey gets bored with item. Worry level is divided by 3 to 126.
+    Current worry level is not divisible by 19.
+    Item with worry level 126 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 55.
+  Worry level operation is old + 6 with old = 55 and new = 61
+  Monkey gets bored with item. Worry level is divided by 3 to 20.
+    Current worry level is not divisible by 19.
+    Item with worry level 20 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 72.
+  Worry level operation is old + 6 with old = 72 and new = 78
+  Monkey gets bored with item. Worry level is divided by 3 to 26.
+    Current worry level is not divisible by 19.
+    Item with worry level 26 is thrown to monkey 0
+[[51, 126, 20, 26], [], [], [1026, 76, 88, 405, 4636, 107]]
+Monkey 2:
+[[51, 126, 20, 26], [], [], [1026, 76, 88, 405, 4636, 107]]
+Monkey 3:
+  Monkey inspects an item with a worry level of 1026.
+  Worry level operation is old + 3 with old = 1026 and new = 1029
+  Monkey gets bored with item. Worry level is divided by 3 to 343.
+    Current worry level is not divisible by 17.
+    Item with worry level 343 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 76.
+  Worry level operation is old + 3 with old = 76 and new = 79
+  Monkey gets bored with item. Worry level is divided by 3 to 26.
+    Current worry level is not divisible by 17.
+    Item with worry level 26 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 88.
+  Worry level operation is old + 3 with old = 88 and new = 91
+  Monkey gets bored with item. Worry level is divided by 3 to 30.
+    Current worry level is not divisible by 17.
+    Item with worry level 30 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 405.
+  Worry level operation is old + 3 with old = 405 and new = 408
+  Monkey gets bored with item. Worry level is divided by 3 to 136.
+    Current worry level is divisible by 17.
+    Item with worry level 136 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 4636.
+  Worry level operation is old + 3 with old = 4636 and new = 4639
+  Monkey gets bored with item. Worry level is divided by 3 to 1546.
+    Current worry level is not divisible by 17.
+    Item with worry level 1546 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 107.
+  Worry level operation is old + 3 with old = 107 and new = 110
+  Monkey gets bored with item. Worry level is divided by 3 to 36.
+    Current worry level is not divisible by 17.
+    Item with worry level 36 is thrown to monkey 1
+[[51, 126, 20, 26, 136], [343, 26, 30, 1546, 36], [], []]
+Monkey 0:
+  Monkey inspects an item with a worry level of 51.
+  Worry level operation is old * 19 with old = 51 and new = 969
+  Monkey gets bored with item. Worry level is divided by 3 to 323.
+    Current worry level is not divisible by 23.
+    Item with worry level 323 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 126.
+  Worry level operation is old * 19 with old = 126 and new = 2394
+  Monkey gets bored with item. Worry level is divided by 3 to 798.
+    Current worry level is not divisible by 23.
+    Item with worry level 798 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 20.
+  Worry level operation is old * 19 with old = 20 and new = 380
+  Monkey gets bored with item. Worry level is divided by 3 to 126.
+    Current worry level is not divisible by 23.
+    Item with worry level 126 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 26.
+  Worry level operation is old * 19 with old = 26 and new = 494
+  Monkey gets bored with item. Worry level is divided by 3 to 164.
+    Current worry level is not divisible by 23.
+    Item with worry level 164 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 136.
+  Worry level operation is old * 19 with old = 136 and new = 2584
+  Monkey gets bored with item. Worry level is divided by 3 to 861.
+    Current worry level is not divisible by 23.
+    Item with worry level 861 is thrown to monkey 3
+[[], [343, 26, 30, 1546, 36], [], [323, 798, 126, 164, 861]]
+Monkey 1:
+  Monkey inspects an item with a worry level of 343.
+  Worry level operation is old + 6 with old = 343 and new = 349
+  Monkey gets bored with item. Worry level is divided by 3 to 116.
+    Current worry level is not divisible by 19.
+    Item with worry level 116 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 26.
+  Worry level operation is old + 6 with old = 26 and new = 32
+  Monkey gets bored with item. Worry level is divided by 3 to 10.
+    Current worry level is not divisible by 19.
+    Item with worry level 10 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 30.
+  Worry level operation is old + 6 with old = 30 and new = 36
+  Monkey gets bored with item. Worry level is divided by 3 to 12.
+    Current worry level is not divisible by 19.
+    Item with worry level 12 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 1546.
+  Worry level operation is old + 6 with old = 1546 and new = 1552
+  Monkey gets bored with item. Worry level is divided by 3 to 517.
+    Current worry level is not divisible by 19.
+    Item with worry level 517 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 36.
+  Worry level operation is old + 6 with old = 36 and new = 42
+  Monkey gets bored with item. Worry level is divided by 3 to 14.
+    Current worry level is not divisible by 19.
+    Item with worry level 14 is thrown to monkey 0
+[[116, 10, 12, 517, 14], [], [], [323, 798, 126, 164, 861]]
+Monkey 2:
+[[116, 10, 12, 517, 14], [], [], [323, 798, 126, 164, 861]]
+Monkey 3:
+  Monkey inspects an item with a worry level of 323.
+  Worry level operation is old + 3 with old = 323 and new = 326
+  Monkey gets bored with item. Worry level is divided by 3 to 108.
+    Current worry level is not divisible by 17.
+    Item with worry level 108 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 798.
+  Worry level operation is old + 3 with old = 798 and new = 801
+  Monkey gets bored with item. Worry level is divided by 3 to 267.
+    Current worry level is not divisible by 17.
+    Item with worry level 267 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 126.
+  Worry level operation is old + 3 with old = 126 and new = 129
+  Monkey gets bored with item. Worry level is divided by 3 to 43.
+    Current worry level is not divisible by 17.
+    Item with worry level 43 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 164.
+  Worry level operation is old + 3 with old = 164 and new = 167
+  Monkey gets bored with item. Worry level is divided by 3 to 55.
+    Current worry level is not divisible by 17.
+    Item with worry level 55 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 861.
+  Worry level operation is old + 3 with old = 861 and new = 864
+  Monkey gets bored with item. Worry level is divided by 3 to 288.
+    Current worry level is not divisible by 17.
+    Item with worry level 288 is thrown to monkey 1
+[[116, 10, 12, 517, 14], [108, 267, 43, 55, 288], [], []]
+Monkey 0:
+  Monkey inspects an item with a worry level of 116.
+  Worry level operation is old * 19 with old = 116 and new = 2204
+  Monkey gets bored with item. Worry level is divided by 3 to 734.
+    Current worry level is not divisible by 23.
+    Item with worry level 734 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 10.
+  Worry level operation is old * 19 with old = 10 and new = 190
+  Monkey gets bored with item. Worry level is divided by 3 to 63.
+    Current worry level is not divisible by 23.
+    Item with worry level 63 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 12.
+  Worry level operation is old * 19 with old = 12 and new = 228
+  Monkey gets bored with item. Worry level is divided by 3 to 76.
+    Current worry level is not divisible by 23.
+    Item with worry level 76 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 517.
+  Worry level operation is old * 19 with old = 517 and new = 9823
+  Monkey gets bored with item. Worry level is divided by 3 to 3274.
+    Current worry level is not divisible by 23.
+    Item with worry level 3274 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 14.
+  Worry level operation is old * 19 with old = 14 and new = 266
+  Monkey gets bored with item. Worry level is divided by 3 to 88.
+    Current worry level is not divisible by 23.
+    Item with worry level 88 is thrown to monkey 3
+[[], [108, 267, 43, 55, 288], [], [734, 63, 76, 3274, 88]]
+Monkey 1:
+  Monkey inspects an item with a worry level of 108.
+  Worry level operation is old + 6 with old = 108 and new = 114
+  Monkey gets bored with item. Worry level is divided by 3 to 38.
+    Current worry level is divisible by 19.
+    Item with worry level 38 is thrown to monkey 2
+  Monkey inspects an item with a worry level of 267.
+  Worry level operation is old + 6 with old = 267 and new = 273
+  Monkey gets bored with item. Worry level is divided by 3 to 91.
+    Current worry level is not divisible by 19.
+    Item with worry level 91 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 43.
+  Worry level operation is old + 6 with old = 43 and new = 49
+  Monkey gets bored with item. Worry level is divided by 3 to 16.
+    Current worry level is not divisible by 19.
+    Item with worry level 16 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 55.
+  Worry level operation is old + 6 with old = 55 and new = 61
+  Monkey gets bored with item. Worry level is divided by 3 to 20.
+    Current worry level is not divisible by 19.
+    Item with worry level 20 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 288.
+  Worry level operation is old + 6 with old = 288 and new = 294
+  Monkey gets bored with item. Worry level is divided by 3 to 98.
+    Current worry level is not divisible by 19.
+    Item with worry level 98 is thrown to monkey 0
+[[91, 16, 20, 98], [], [38], [734, 63, 76, 3274, 88]]
+Monkey 2:
+  Monkey inspects an item with a worry level of 38.
+  Worry level operation is old * old with old = 38 and new = 1444
+  Monkey gets bored with item. Worry level is divided by 3 to 481.
+    Current worry level is divisible by 13.
+    Item with worry level 481 is thrown to monkey 1
+[[91, 16, 20, 98], [481], [], [734, 63, 76, 3274, 88]]
+Monkey 3:
+  Monkey inspects an item with a worry level of 734.
+  Worry level operation is old + 3 with old = 734 and new = 737
+  Monkey gets bored with item. Worry level is divided by 3 to 245.
+    Current worry level is not divisible by 17.
+    Item with worry level 245 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 63.
+  Worry level operation is old + 3 with old = 63 and new = 66
+  Monkey gets bored with item. Worry level is divided by 3 to 22.
+    Current worry level is not divisible by 17.
+    Item with worry level 22 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 76.
+  Worry level operation is old + 3 with old = 76 and new = 79
+  Monkey gets bored with item. Worry level is divided by 3 to 26.
+    Current worry level is not divisible by 17.
+    Item with worry level 26 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 3274.
+  Worry level operation is old + 3 with old = 3274 and new = 3277
+  Monkey gets bored with item. Worry level is divided by 3 to 1092.
+    Current worry level is not divisible by 17.
+    Item with worry level 1092 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 88.
+  Worry level operation is old + 3 with old = 88 and new = 91
+  Monkey gets bored with item. Worry level is divided by 3 to 30.
+    Current worry level is not divisible by 17.
+    Item with worry level 30 is thrown to monkey 1
+[[91, 16, 20, 98], [481, 245, 22, 26, 1092, 30], [], []]
+Monkey 0:
+  Monkey inspects an item with a worry level of 91.
+  Worry level operation is old * 19 with old = 91 and new = 1729
+  Monkey gets bored with item. Worry level is divided by 3 to 576.
+    Current worry level is not divisible by 23.
+    Item with worry level 576 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 16.
+  Worry level operation is old * 19 with old = 16 and new = 304
+  Monkey gets bored with item. Worry level is divided by 3 to 101.
+    Current worry level is not divisible by 23.
+    Item with worry level 101 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 20.
+  Worry level operation is old * 19 with old = 20 and new = 380
+  Monkey gets bored with item. Worry level is divided by 3 to 126.
+    Current worry level is not divisible by 23.
+    Item with worry level 126 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 98.
+  Worry level operation is old * 19 with old = 98 and new = 1862
+  Monkey gets bored with item. Worry level is divided by 3 to 620.
+    Current worry level is not divisible by 23.
+    Item with worry level 620 is thrown to monkey 3
+[[], [481, 245, 22, 26, 1092, 30], [], [576, 101, 126, 620]]
+Monkey 1:
+  Monkey inspects an item with a worry level of 481.
+  Worry level operation is old + 6 with old = 481 and new = 487
+  Monkey gets bored with item. Worry level is divided by 3 to 162.
+    Current worry level is not divisible by 19.
+    Item with worry level 162 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 245.
+  Worry level operation is old + 6 with old = 245 and new = 251
+  Monkey gets bored with item. Worry level is divided by 3 to 83.
+    Current worry level is not divisible by 19.
+    Item with worry level 83 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 22.
+  Worry level operation is old + 6 with old = 22 and new = 28
+  Monkey gets bored with item. Worry level is divided by 3 to 9.
+    Current worry level is not divisible by 19.
+    Item with worry level 9 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 26.
+  Worry level operation is old + 6 with old = 26 and new = 32
+  Monkey gets bored with item. Worry level is divided by 3 to 10.
+    Current worry level is not divisible by 19.
+    Item with worry level 10 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 1092.
+  Worry level operation is old + 6 with old = 1092 and new = 1098
+  Monkey gets bored with item. Worry level is divided by 3 to 366.
+    Current worry level is not divisible by 19.
+    Item with worry level 366 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 30.
+  Worry level operation is old + 6 with old = 30 and new = 36
+  Monkey gets bored with item. Worry level is divided by 3 to 12.
+    Current worry level is not divisible by 19.
+    Item with worry level 12 is thrown to monkey 0
+[[162, 83, 9, 10, 366, 12], [], [], [576, 101, 126, 620]]
+Monkey 2:
+[[162, 83, 9, 10, 366, 12], [], [], [576, 101, 126, 620]]
+Monkey 3:
+  Monkey inspects an item with a worry level of 576.
+  Worry level operation is old + 3 with old = 576 and new = 579
+  Monkey gets bored with item. Worry level is divided by 3 to 193.
+    Current worry level is not divisible by 17.
+    Item with worry level 193 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 101.
+  Worry level operation is old + 3 with old = 101 and new = 104
+  Monkey gets bored with item. Worry level is divided by 3 to 34.
+    Current worry level is divisible by 17.
+    Item with worry level 34 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 126.
+  Worry level operation is old + 3 with old = 126 and new = 129
+  Monkey gets bored with item. Worry level is divided by 3 to 43.
+    Current worry level is not divisible by 17.
+    Item with worry level 43 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 620.
+  Worry level operation is old + 3 with old = 620 and new = 623
+  Monkey gets bored with item. Worry level is divided by 3 to 207.
+    Current worry level is not divisible by 17.
+    Item with worry level 207 is thrown to monkey 1
+[[162, 83, 9, 10, 366, 12, 34], [193, 43, 207], [], []]
+Monkey 0:
+  Monkey inspects an item with a worry level of 162.
+  Worry level operation is old * 19 with old = 162 and new = 3078
+  Monkey gets bored with item. Worry level is divided by 3 to 1026.
+    Current worry level is not divisible by 23.
+    Item with worry level 1026 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 83.
+  Worry level operation is old * 19 with old = 83 and new = 1577
+  Monkey gets bored with item. Worry level is divided by 3 to 525.
+    Current worry level is not divisible by 23.
+    Item with worry level 525 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 9.
+  Worry level operation is old * 19 with old = 9 and new = 171
+  Monkey gets bored with item. Worry level is divided by 3 to 57.
+    Current worry level is not divisible by 23.
+    Item with worry level 57 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 10.
+  Worry level operation is old * 19 with old = 10 and new = 190
+  Monkey gets bored with item. Worry level is divided by 3 to 63.
+    Current worry level is not divisible by 23.
+    Item with worry level 63 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 366.
+  Worry level operation is old * 19 with old = 366 and new = 6954
+  Monkey gets bored with item. Worry level is divided by 3 to 2318.
+    Current worry level is not divisible by 23.
+    Item with worry level 2318 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 12.
+  Worry level operation is old * 19 with old = 12 and new = 228
+  Monkey gets bored with item. Worry level is divided by 3 to 76.
+    Current worry level is not divisible by 23.
+    Item with worry level 76 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 34.
+  Worry level operation is old * 19 with old = 34 and new = 646
+  Monkey gets bored with item. Worry level is divided by 3 to 215.
+    Current worry level is not divisible by 23.
+    Item with worry level 215 is thrown to monkey 3
+[[], [193, 43, 207], [], [1026, 525, 57, 63, 2318, 76, 215]]
+Monkey 1:
+  Monkey inspects an item with a worry level of 193.
+  Worry level operation is old + 6 with old = 193 and new = 199
+  Monkey gets bored with item. Worry level is divided by 3 to 66.
+    Current worry level is not divisible by 19.
+    Item with worry level 66 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 43.
+  Worry level operation is old + 6 with old = 43 and new = 49
+  Monkey gets bored with item. Worry level is divided by 3 to 16.
+    Current worry level is not divisible by 19.
+    Item with worry level 16 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 207.
+  Worry level operation is old + 6 with old = 207 and new = 213
+  Monkey gets bored with item. Worry level is divided by 3 to 71.
+    Current worry level is not divisible by 19.
+    Item with worry level 71 is thrown to monkey 0
+[[66, 16, 71], [], [], [1026, 525, 57, 63, 2318, 76, 215]]
+Monkey 2:
+[[66, 16, 71], [], [], [1026, 525, 57, 63, 2318, 76, 215]]
+Monkey 3:
+  Monkey inspects an item with a worry level of 1026.
+  Worry level operation is old + 3 with old = 1026 and new = 1029
+  Monkey gets bored with item. Worry level is divided by 3 to 343.
+    Current worry level is not divisible by 17.
+    Item with worry level 343 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 525.
+  Worry level operation is old + 3 with old = 525 and new = 528
+  Monkey gets bored with item. Worry level is divided by 3 to 176.
+    Current worry level is not divisible by 17.
+    Item with worry level 176 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 57.
+  Worry level operation is old + 3 with old = 57 and new = 60
+  Monkey gets bored with item. Worry level is divided by 3 to 20.
+    Current worry level is not divisible by 17.
+    Item with worry level 20 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 63.
+  Worry level operation is old + 3 with old = 63 and new = 66
+  Monkey gets bored with item. Worry level is divided by 3 to 22.
+    Current worry level is not divisible by 17.
+    Item with worry level 22 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 2318.
+  Worry level operation is old + 3 with old = 2318 and new = 2321
+  Monkey gets bored with item. Worry level is divided by 3 to 773.
+    Current worry level is not divisible by 17.
+    Item with worry level 773 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 76.
+  Worry level operation is old + 3 with old = 76 and new = 79
+  Monkey gets bored with item. Worry level is divided by 3 to 26.
+    Current worry level is not divisible by 17.
+    Item with worry level 26 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 215.
+  Worry level operation is old + 3 with old = 215 and new = 218
+  Monkey gets bored with item. Worry level is divided by 3 to 72.
+    Current worry level is not divisible by 17.
+    Item with worry level 72 is thrown to monkey 1
+[[66, 16, 71], [343, 176, 20, 22, 773, 26, 72], [], []]
+Monkey 0:
+  Monkey inspects an item with a worry level of 66.
+  Worry level operation is old * 19 with old = 66 and new = 1254
+  Monkey gets bored with item. Worry level is divided by 3 to 418.
+    Current worry level is not divisible by 23.
+    Item with worry level 418 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 16.
+  Worry level operation is old * 19 with old = 16 and new = 304
+  Monkey gets bored with item. Worry level is divided by 3 to 101.
+    Current worry level is not divisible by 23.
+    Item with worry level 101 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 71.
+  Worry level operation is old * 19 with old = 71 and new = 1349
+  Monkey gets bored with item. Worry level is divided by 3 to 449.
+    Current worry level is not divisible by 23.
+    Item with worry level 449 is thrown to monkey 3
+[[], [343, 176, 20, 22, 773, 26, 72], [], [418, 101, 449]]
+Monkey 1:
+  Monkey inspects an item with a worry level of 343.
+  Worry level operation is old + 6 with old = 343 and new = 349
+  Monkey gets bored with item. Worry level is divided by 3 to 116.
+    Current worry level is not divisible by 19.
+    Item with worry level 116 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 176.
+  Worry level operation is old + 6 with old = 176 and new = 182
+  Monkey gets bored with item. Worry level is divided by 3 to 60.
+    Current worry level is not divisible by 19.
+    Item with worry level 60 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 20.
+  Worry level operation is old + 6 with old = 20 and new = 26
+  Monkey gets bored with item. Worry level is divided by 3 to 8.
+    Current worry level is not divisible by 19.
+    Item with worry level 8 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 22.
+  Worry level operation is old + 6 with old = 22 and new = 28
+  Monkey gets bored with item. Worry level is divided by 3 to 9.
+    Current worry level is not divisible by 19.
+    Item with worry level 9 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 773.
+  Worry level operation is old + 6 with old = 773 and new = 779
+  Monkey gets bored with item. Worry level is divided by 3 to 259.
+    Current worry level is not divisible by 19.
+    Item with worry level 259 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 26.
+  Worry level operation is old + 6 with old = 26 and new = 32
+  Monkey gets bored with item. Worry level is divided by 3 to 10.
+    Current worry level is not divisible by 19.
+    Item with worry level 10 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 72.
+  Worry level operation is old + 6 with old = 72 and new = 78
+  Monkey gets bored with item. Worry level is divided by 3 to 26.
+    Current worry level is not divisible by 19.
+    Item with worry level 26 is thrown to monkey 0
+[[116, 60, 8, 9, 259, 10, 26], [], [], [418, 101, 449]]
+Monkey 2:
+[[116, 60, 8, 9, 259, 10, 26], [], [], [418, 101, 449]]
+Monkey 3:
+  Monkey inspects an item with a worry level of 418.
+  Worry level operation is old + 3 with old = 418 and new = 421
+  Monkey gets bored with item. Worry level is divided by 3 to 140.
+    Current worry level is not divisible by 17.
+    Item with worry level 140 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 101.
+  Worry level operation is old + 3 with old = 101 and new = 104
+  Monkey gets bored with item. Worry level is divided by 3 to 34.
+    Current worry level is divisible by 17.
+    Item with worry level 34 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 449.
+  Worry level operation is old + 3 with old = 449 and new = 452
+  Monkey gets bored with item. Worry level is divided by 3 to 150.
+    Current worry level is not divisible by 17.
+    Item with worry level 150 is thrown to monkey 1
+[[116, 60, 8, 9, 259, 10, 26, 34], [140, 150], [], []]
+Monkey 0:
+  Monkey inspects an item with a worry level of 116.
+  Worry level operation is old * 19 with old = 116 and new = 2204
+  Monkey gets bored with item. Worry level is divided by 3 to 734.
+    Current worry level is not divisible by 23.
+    Item with worry level 734 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 60.
+  Worry level operation is old * 19 with old = 60 and new = 1140
+  Monkey gets bored with item. Worry level is divided by 3 to 380.
+    Current worry level is not divisible by 23.
+    Item with worry level 380 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 8.
+  Worry level operation is old * 19 with old = 8 and new = 152
+  Monkey gets bored with item. Worry level is divided by 3 to 50.
+    Current worry level is not divisible by 23.
+    Item with worry level 50 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 9.
+  Worry level operation is old * 19 with old = 9 and new = 171
+  Monkey gets bored with item. Worry level is divided by 3 to 57.
+    Current worry level is not divisible by 23.
+    Item with worry level 57 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 259.
+  Worry level operation is old * 19 with old = 259 and new = 4921
+  Monkey gets bored with item. Worry level is divided by 3 to 1640.
+    Current worry level is not divisible by 23.
+    Item with worry level 1640 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 10.
+  Worry level operation is old * 19 with old = 10 and new = 190
+  Monkey gets bored with item. Worry level is divided by 3 to 63.
+    Current worry level is not divisible by 23.
+    Item with worry level 63 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 26.
+  Worry level operation is old * 19 with old = 26 and new = 494
+  Monkey gets bored with item. Worry level is divided by 3 to 164.
+    Current worry level is not divisible by 23.
+    Item with worry level 164 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 34.
+  Worry level operation is old * 19 with old = 34 and new = 646
+  Monkey gets bored with item. Worry level is divided by 3 to 215.
+    Current worry level is not divisible by 23.
+    Item with worry level 215 is thrown to monkey 3
+[[], [140, 150], [], [734, 380, 50, 57, 1640, 63, 164, 215]]
+Monkey 1:
+  Monkey inspects an item with a worry level of 140.
+  Worry level operation is old + 6 with old = 140 and new = 146
+  Monkey gets bored with item. Worry level is divided by 3 to 48.
+    Current worry level is not divisible by 19.
+    Item with worry level 48 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 150.
+  Worry level operation is old + 6 with old = 150 and new = 156
+  Monkey gets bored with item. Worry level is divided by 3 to 52.
+    Current worry level is not divisible by 19.
+    Item with worry level 52 is thrown to monkey 0
+[[48, 52], [], [], [734, 380, 50, 57, 1640, 63, 164, 215]]
+Monkey 2:
+[[48, 52], [], [], [734, 380, 50, 57, 1640, 63, 164, 215]]
+Monkey 3:
+  Monkey inspects an item with a worry level of 734.
+  Worry level operation is old + 3 with old = 734 and new = 737
+  Monkey gets bored with item. Worry level is divided by 3 to 245.
+    Current worry level is not divisible by 17.
+    Item with worry level 245 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 380.
+  Worry level operation is old + 3 with old = 380 and new = 383
+  Monkey gets bored with item. Worry level is divided by 3 to 127.
+    Current worry level is not divisible by 17.
+    Item with worry level 127 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 50.
+  Worry level operation is old + 3 with old = 50 and new = 53
+  Monkey gets bored with item. Worry level is divided by 3 to 17.
+    Current worry level is divisible by 17.
+    Item with worry level 17 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 57.
+  Worry level operation is old + 3 with old = 57 and new = 60
+  Monkey gets bored with item. Worry level is divided by 3 to 20.
+    Current worry level is not divisible by 17.
+    Item with worry level 20 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 1640.
+  Worry level operation is old + 3 with old = 1640 and new = 1643
+  Monkey gets bored with item. Worry level is divided by 3 to 547.
+    Current worry level is not divisible by 17.
+    Item with worry level 547 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 63.
+  Worry level operation is old + 3 with old = 63 and new = 66
+  Monkey gets bored with item. Worry level is divided by 3 to 22.
+    Current worry level is not divisible by 17.
+    Item with worry level 22 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 164.
+  Worry level operation is old + 3 with old = 164 and new = 167
+  Monkey gets bored with item. Worry level is divided by 3 to 55.
+    Current worry level is not divisible by 17.
+    Item with worry level 55 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 215.
+  Worry level operation is old + 3 with old = 215 and new = 218
+  Monkey gets bored with item. Worry level is divided by 3 to 72.
+    Current worry level is not divisible by 17.
+    Item with worry level 72 is thrown to monkey 1
+[[48, 52, 17], [245, 127, 20, 547, 22, 55, 72], [], []]
+Monkey 0:
+  Monkey inspects an item with a worry level of 48.
+  Worry level operation is old * 19 with old = 48 and new = 912
+  Monkey gets bored with item. Worry level is divided by 3 to 304.
+    Current worry level is not divisible by 23.
+    Item with worry level 304 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 52.
+  Worry level operation is old * 19 with old = 52 and new = 988
+  Monkey gets bored with item. Worry level is divided by 3 to 329.
+    Current worry level is not divisible by 23.
+    Item with worry level 329 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 17.
+  Worry level operation is old * 19 with old = 17 and new = 323
+  Monkey gets bored with item. Worry level is divided by 3 to 107.
+    Current worry level is not divisible by 23.
+    Item with worry level 107 is thrown to monkey 3
+[[], [245, 127, 20, 547, 22, 55, 72], [], [304, 329, 107]]
+Monkey 1:
+  Monkey inspects an item with a worry level of 245.
+  Worry level operation is old + 6 with old = 245 and new = 251
+  Monkey gets bored with item. Worry level is divided by 3 to 83.
+    Current worry level is not divisible by 19.
+    Item with worry level 83 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 127.
+  Worry level operation is old + 6 with old = 127 and new = 133
+  Monkey gets bored with item. Worry level is divided by 3 to 44.
+    Current worry level is not divisible by 19.
+    Item with worry level 44 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 20.
+  Worry level operation is old + 6 with old = 20 and new = 26
+  Monkey gets bored with item. Worry level is divided by 3 to 8.
+    Current worry level is not divisible by 19.
+    Item with worry level 8 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 547.
+  Worry level operation is old + 6 with old = 547 and new = 553
+  Monkey gets bored with item. Worry level is divided by 3 to 184.
+    Current worry level is not divisible by 19.
+    Item with worry level 184 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 22.
+  Worry level operation is old + 6 with old = 22 and new = 28
+  Monkey gets bored with item. Worry level is divided by 3 to 9.
+    Current worry level is not divisible by 19.
+    Item with worry level 9 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 55.
+  Worry level operation is old + 6 with old = 55 and new = 61
+  Monkey gets bored with item. Worry level is divided by 3 to 20.
+    Current worry level is not divisible by 19.
+    Item with worry level 20 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 72.
+  Worry level operation is old + 6 with old = 72 and new = 78
+  Monkey gets bored with item. Worry level is divided by 3 to 26.
+    Current worry level is not divisible by 19.
+    Item with worry level 26 is thrown to monkey 0
+[[83, 44, 8, 184, 9, 20, 26], [], [], [304, 329, 107]]
+Monkey 2:
+[[83, 44, 8, 184, 9, 20, 26], [], [], [304, 329, 107]]
+Monkey 3:
+  Monkey inspects an item with a worry level of 304.
+  Worry level operation is old + 3 with old = 304 and new = 307
+  Monkey gets bored with item. Worry level is divided by 3 to 102.
+    Current worry level is divisible by 17.
+    Item with worry level 102 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 329.
+  Worry level operation is old + 3 with old = 329 and new = 332
+  Monkey gets bored with item. Worry level is divided by 3 to 110.
+    Current worry level is not divisible by 17.
+    Item with worry level 110 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 107.
+  Worry level operation is old + 3 with old = 107 and new = 110
+  Monkey gets bored with item. Worry level is divided by 3 to 36.
+    Current worry level is not divisible by 17.
+    Item with worry level 36 is thrown to monkey 1
+[[83, 44, 8, 184, 9, 20, 26, 102], [110, 36], [], []]
+Monkey 0:
+  Monkey inspects an item with a worry level of 83.
+  Worry level operation is old * 19 with old = 83 and new = 1577
+  Monkey gets bored with item. Worry level is divided by 3 to 525.
+    Current worry level is not divisible by 23.
+    Item with worry level 525 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 44.
+  Worry level operation is old * 19 with old = 44 and new = 836
+  Monkey gets bored with item. Worry level is divided by 3 to 278.
+    Current worry level is not divisible by 23.
+    Item with worry level 278 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 8.
+  Worry level operation is old * 19 with old = 8 and new = 152
+  Monkey gets bored with item. Worry level is divided by 3 to 50.
+    Current worry level is not divisible by 23.
+    Item with worry level 50 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 184.
+  Worry level operation is old * 19 with old = 184 and new = 3496
+  Monkey gets bored with item. Worry level is divided by 3 to 1165.
+    Current worry level is not divisible by 23.
+    Item with worry level 1165 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 9.
+  Worry level operation is old * 19 with old = 9 and new = 171
+  Monkey gets bored with item. Worry level is divided by 3 to 57.
+    Current worry level is not divisible by 23.
+    Item with worry level 57 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 20.
+  Worry level operation is old * 19 with old = 20 and new = 380
+  Monkey gets bored with item. Worry level is divided by 3 to 126.
+    Current worry level is not divisible by 23.
+    Item with worry level 126 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 26.
+  Worry level operation is old * 19 with old = 26 and new = 494
+  Monkey gets bored with item. Worry level is divided by 3 to 164.
+    Current worry level is not divisible by 23.
+    Item with worry level 164 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 102.
+  Worry level operation is old * 19 with old = 102 and new = 1938
+  Monkey gets bored with item. Worry level is divided by 3 to 646.
+    Current worry level is not divisible by 23.
+    Item with worry level 646 is thrown to monkey 3
+[[], [110, 36], [], [525, 278, 50, 1165, 57, 126, 164, 646]]
+Monkey 1:
+  Monkey inspects an item with a worry level of 110.
+  Worry level operation is old + 6 with old = 110 and new = 116
+  Monkey gets bored with item. Worry level is divided by 3 to 38.
+    Current worry level is divisible by 19.
+    Item with worry level 38 is thrown to monkey 2
+  Monkey inspects an item with a worry level of 36.
+  Worry level operation is old + 6 with old = 36 and new = 42
+  Monkey gets bored with item. Worry level is divided by 3 to 14.
+    Current worry level is not divisible by 19.
+    Item with worry level 14 is thrown to monkey 0
+[[14], [], [38], [525, 278, 50, 1165, 57, 126, 164, 646]]
+Monkey 2:
+  Monkey inspects an item with a worry level of 38.
+  Worry level operation is old * old with old = 38 and new = 1444
+  Monkey gets bored with item. Worry level is divided by 3 to 481.
+    Current worry level is divisible by 13.
+    Item with worry level 481 is thrown to monkey 1
+[[14], [481], [], [525, 278, 50, 1165, 57, 126, 164, 646]]
+Monkey 3:
+  Monkey inspects an item with a worry level of 525.
+  Worry level operation is old + 3 with old = 525 and new = 528
+  Monkey gets bored with item. Worry level is divided by 3 to 176.
+    Current worry level is not divisible by 17.
+    Item with worry level 176 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 278.
+  Worry level operation is old + 3 with old = 278 and new = 281
+  Monkey gets bored with item. Worry level is divided by 3 to 93.
+    Current worry level is not divisible by 17.
+    Item with worry level 93 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 50.
+  Worry level operation is old + 3 with old = 50 and new = 53
+  Monkey gets bored with item. Worry level is divided by 3 to 17.
+    Current worry level is divisible by 17.
+    Item with worry level 17 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 1165.
+  Worry level operation is old + 3 with old = 1165 and new = 1168
+  Monkey gets bored with item. Worry level is divided by 3 to 389.
+    Current worry level is not divisible by 17.
+    Item with worry level 389 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 57.
+  Worry level operation is old + 3 with old = 57 and new = 60
+  Monkey gets bored with item. Worry level is divided by 3 to 20.
+    Current worry level is not divisible by 17.
+    Item with worry level 20 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 126.
+  Worry level operation is old + 3 with old = 126 and new = 129
+  Monkey gets bored with item. Worry level is divided by 3 to 43.
+    Current worry level is not divisible by 17.
+    Item with worry level 43 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 164.
+  Worry level operation is old + 3 with old = 164 and new = 167
+  Monkey gets bored with item. Worry level is divided by 3 to 55.
+    Current worry level is not divisible by 17.
+    Item with worry level 55 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 646.
+  Worry level operation is old + 3 with old = 646 and new = 649
+  Monkey gets bored with item. Worry level is divided by 3 to 216.
+    Current worry level is not divisible by 17.
+    Item with worry level 216 is thrown to monkey 1
+[[14, 17], [481, 176, 93, 389, 20, 43, 55, 216], [], []]
+Monkey 0:
+  Monkey inspects an item with a worry level of 14.
+  Worry level operation is old * 19 with old = 14 and new = 266
+  Monkey gets bored with item. Worry level is divided by 3 to 88.
+    Current worry level is not divisible by 23.
+    Item with worry level 88 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 17.
+  Worry level operation is old * 19 with old = 17 and new = 323
+  Monkey gets bored with item. Worry level is divided by 3 to 107.
+    Current worry level is not divisible by 23.
+    Item with worry level 107 is thrown to monkey 3
+[[], [481, 176, 93, 389, 20, 43, 55, 216], [], [88, 107]]
+Monkey 1:
+  Monkey inspects an item with a worry level of 481.
+  Worry level operation is old + 6 with old = 481 and new = 487
+  Monkey gets bored with item. Worry level is divided by 3 to 162.
+    Current worry level is not divisible by 19.
+    Item with worry level 162 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 176.
+  Worry level operation is old + 6 with old = 176 and new = 182
+  Monkey gets bored with item. Worry level is divided by 3 to 60.
+    Current worry level is not divisible by 19.
+    Item with worry level 60 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 93.
+  Worry level operation is old + 6 with old = 93 and new = 99
+  Monkey gets bored with item. Worry level is divided by 3 to 33.
+    Current worry level is not divisible by 19.
+    Item with worry level 33 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 389.
+  Worry level operation is old + 6 with old = 389 and new = 395
+  Monkey gets bored with item. Worry level is divided by 3 to 131.
+    Current worry level is not divisible by 19.
+    Item with worry level 131 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 20.
+  Worry level operation is old + 6 with old = 20 and new = 26
+  Monkey gets bored with item. Worry level is divided by 3 to 8.
+    Current worry level is not divisible by 19.
+    Item with worry level 8 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 43.
+  Worry level operation is old + 6 with old = 43 and new = 49
+  Monkey gets bored with item. Worry level is divided by 3 to 16.
+    Current worry level is not divisible by 19.
+    Item with worry level 16 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 55.
+  Worry level operation is old + 6 with old = 55 and new = 61
+  Monkey gets bored with item. Worry level is divided by 3 to 20.
+    Current worry level is not divisible by 19.
+    Item with worry level 20 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 216.
+  Worry level operation is old + 6 with old = 216 and new = 222
+  Monkey gets bored with item. Worry level is divided by 3 to 74.
+    Current worry level is not divisible by 19.
+    Item with worry level 74 is thrown to monkey 0
+[[162, 60, 33, 131, 8, 16, 20, 74], [], [], [88, 107]]
+Monkey 2:
+[[162, 60, 33, 131, 8, 16, 20, 74], [], [], [88, 107]]
+Monkey 3:
+  Monkey inspects an item with a worry level of 88.
+  Worry level operation is old + 3 with old = 88 and new = 91
+  Monkey gets bored with item. Worry level is divided by 3 to 30.
+    Current worry level is not divisible by 17.
+    Item with worry level 30 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 107.
+  Worry level operation is old + 3 with old = 107 and new = 110
+  Monkey gets bored with item. Worry level is divided by 3 to 36.
+    Current worry level is not divisible by 17.
+    Item with worry level 36 is thrown to monkey 1
+[[162, 60, 33, 131, 8, 16, 20, 74], [30, 36], [], []]
+Monkey 0:
+  Monkey inspects an item with a worry level of 162.
+  Worry level operation is old * 19 with old = 162 and new = 3078
+  Monkey gets bored with item. Worry level is divided by 3 to 1026.
+    Current worry level is not divisible by 23.
+    Item with worry level 1026 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 60.
+  Worry level operation is old * 19 with old = 60 and new = 1140
+  Monkey gets bored with item. Worry level is divided by 3 to 380.
+    Current worry level is not divisible by 23.
+    Item with worry level 380 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 33.
+  Worry level operation is old * 19 with old = 33 and new = 627
+  Monkey gets bored with item. Worry level is divided by 3 to 209.
+    Current worry level is not divisible by 23.
+    Item with worry level 209 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 131.
+  Worry level operation is old * 19 with old = 131 and new = 2489
+  Monkey gets bored with item. Worry level is divided by 3 to 829.
+    Current worry level is not divisible by 23.
+    Item with worry level 829 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 8.
+  Worry level operation is old * 19 with old = 8 and new = 152
+  Monkey gets bored with item. Worry level is divided by 3 to 50.
+    Current worry level is not divisible by 23.
+    Item with worry level 50 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 16.
+  Worry level operation is old * 19 with old = 16 and new = 304
+  Monkey gets bored with item. Worry level is divided by 3 to 101.
+    Current worry level is not divisible by 23.
+    Item with worry level 101 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 20.
+  Worry level operation is old * 19 with old = 20 and new = 380
+  Monkey gets bored with item. Worry level is divided by 3 to 126.
+    Current worry level is not divisible by 23.
+    Item with worry level 126 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 74.
+  Worry level operation is old * 19 with old = 74 and new = 1406
+  Monkey gets bored with item. Worry level is divided by 3 to 468.
+    Current worry level is not divisible by 23.
+    Item with worry level 468 is thrown to monkey 3
+[[], [30, 36], [], [1026, 380, 209, 829, 50, 101, 126, 468]]
+Monkey 1:
+  Monkey inspects an item with a worry level of 30.
+  Worry level operation is old + 6 with old = 30 and new = 36
+  Monkey gets bored with item. Worry level is divided by 3 to 12.
+    Current worry level is not divisible by 19.
+    Item with worry level 12 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 36.
+  Worry level operation is old + 6 with old = 36 and new = 42
+  Monkey gets bored with item. Worry level is divided by 3 to 14.
+    Current worry level is not divisible by 19.
+    Item with worry level 14 is thrown to monkey 0
+[[12, 14], [], [], [1026, 380, 209, 829, 50, 101, 126, 468]]
+Monkey 2:
+[[12, 14], [], [], [1026, 380, 209, 829, 50, 101, 126, 468]]
+Monkey 3:
+  Monkey inspects an item with a worry level of 1026.
+  Worry level operation is old + 3 with old = 1026 and new = 1029
+  Monkey gets bored with item. Worry level is divided by 3 to 343.
+    Current worry level is not divisible by 17.
+    Item with worry level 343 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 380.
+  Worry level operation is old + 3 with old = 380 and new = 383
+  Monkey gets bored with item. Worry level is divided by 3 to 127.
+    Current worry level is not divisible by 17.
+    Item with worry level 127 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 209.
+  Worry level operation is old + 3 with old = 209 and new = 212
+  Monkey gets bored with item. Worry level is divided by 3 to 70.
+    Current worry level is not divisible by 17.
+    Item with worry level 70 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 829.
+  Worry level operation is old + 3 with old = 829 and new = 832
+  Monkey gets bored with item. Worry level is divided by 3 to 277.
+    Current worry level is not divisible by 17.
+    Item with worry level 277 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 50.
+  Worry level operation is old + 3 with old = 50 and new = 53
+  Monkey gets bored with item. Worry level is divided by 3 to 17.
+    Current worry level is divisible by 17.
+    Item with worry level 17 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 101.
+  Worry level operation is old + 3 with old = 101 and new = 104
+  Monkey gets bored with item. Worry level is divided by 3 to 34.
+    Current worry level is divisible by 17.
+    Item with worry level 34 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 126.
+  Worry level operation is old + 3 with old = 126 and new = 129
+  Monkey gets bored with item. Worry level is divided by 3 to 43.
+    Current worry level is not divisible by 17.
+    Item with worry level 43 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 468.
+  Worry level operation is old + 3 with old = 468 and new = 471
+  Monkey gets bored with item. Worry level is divided by 3 to 157.
+    Current worry level is not divisible by 17.
+    Item with worry level 157 is thrown to monkey 1
+[[12, 14, 17, 34], [343, 127, 70, 277, 43, 157], [], []]
+Monkey 0:
+  Monkey inspects an item with a worry level of 12.
+  Worry level operation is old * 19 with old = 12 and new = 228
+  Monkey gets bored with item. Worry level is divided by 3 to 76.
+    Current worry level is not divisible by 23.
+    Item with worry level 76 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 14.
+  Worry level operation is old * 19 with old = 14 and new = 266
+  Monkey gets bored with item. Worry level is divided by 3 to 88.
+    Current worry level is not divisible by 23.
+    Item with worry level 88 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 17.
+  Worry level operation is old * 19 with old = 17 and new = 323
+  Monkey gets bored with item. Worry level is divided by 3 to 107.
+    Current worry level is not divisible by 23.
+    Item with worry level 107 is thrown to monkey 3
+  Monkey inspects an item with a worry level of 34.
+  Worry level operation is old * 19 with old = 34 and new = 646
+  Monkey gets bored with item. Worry level is divided by 3 to 215.
+    Current worry level is not divisible by 23.
+    Item with worry level 215 is thrown to monkey 3
+[[], [343, 127, 70, 277, 43, 157], [], [76, 88, 107, 215]]
+Monkey 1:
+  Monkey inspects an item with a worry level of 343.
+  Worry level operation is old + 6 with old = 343 and new = 349
+  Monkey gets bored with item. Worry level is divided by 3 to 116.
+    Current worry level is not divisible by 19.
+    Item with worry level 116 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 127.
+  Worry level operation is old + 6 with old = 127 and new = 133
+  Monkey gets bored with item. Worry level is divided by 3 to 44.
+    Current worry level is not divisible by 19.
+    Item with worry level 44 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 70.
+  Worry level operation is old + 6 with old = 70 and new = 76
+  Monkey gets bored with item. Worry level is divided by 3 to 25.
+    Current worry level is not divisible by 19.
+    Item with worry level 25 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 277.
+  Worry level operation is old + 6 with old = 277 and new = 283
+  Monkey gets bored with item. Worry level is divided by 3 to 94.
+    Current worry level is not divisible by 19.
+    Item with worry level 94 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 43.
+  Worry level operation is old + 6 with old = 43 and new = 49
+  Monkey gets bored with item. Worry level is divided by 3 to 16.
+    Current worry level is not divisible by 19.
+    Item with worry level 16 is thrown to monkey 0
+  Monkey inspects an item with a worry level of 157.
+  Worry level operation is old + 6 with old = 157 and new = 163
+  Monkey gets bored with item. Worry level is divided by 3 to 54.
+    Current worry level is not divisible by 19.
+    Item with worry level 54 is thrown to monkey 0
+[[116, 44, 25, 94, 16, 54], [], [], [76, 88, 107, 215]]
+Monkey 2:
+[[116, 44, 25, 94, 16, 54], [], [], [76, 88, 107, 215]]
+Monkey 3:
+  Monkey inspects an item with a worry level of 76.
+  Worry level operation is old + 3 with old = 76 and new = 79
+  Monkey gets bored with item. Worry level is divided by 3 to 26.
+    Current worry level is not divisible by 17.
+    Item with worry level 26 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 88.
+  Worry level operation is old + 3 with old = 88 and new = 91
+  Monkey gets bored with item. Worry level is divided by 3 to 30.
+    Current worry level is not divisible by 17.
+    Item with worry level 30 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 107.
+  Worry level operation is old + 3 with old = 107 and new = 110
+  Monkey gets bored with item. Worry level is divided by 3 to 36.
+    Current worry level is not divisible by 17.
+    Item with worry level 36 is thrown to monkey 1
+  Monkey inspects an item with a worry level of 215.
+  Worry level operation is old + 3 with old = 215 and new = 218
+  Monkey gets bored with item. Worry level is divided by 3 to 72.
+    Current worry level is not divisible by 17.
+    Item with worry level 72 is thrown to monkey 1
+[[116, 44, 25, 94, 16, 54], [26, 30, 36, 72], [], []]
+[101, 95, 7, 99]
+9999
